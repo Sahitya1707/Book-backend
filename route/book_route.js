@@ -38,7 +38,7 @@ const upload = multer({ storage: storage });
 //   //   });
 // });
 router.post("/add", upload.single("image"), (req, res) => {
-  // console.log(req.file);
+  console.log(req.file);
 
   // console.log(`Route has been reached`);
   // const { author } = req.body;
